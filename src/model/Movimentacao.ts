@@ -26,6 +26,7 @@ export class Movimentacao extends AbstractEntity {
         valorTotal: BigInt,
         valorHoraMulta: BigInt
     ) {
+        super();
         this.entrada = entrada
         this.saida = saida
         this.tempo = tempo

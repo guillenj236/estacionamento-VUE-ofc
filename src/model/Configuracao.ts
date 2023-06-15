@@ -7,9 +7,9 @@ export class Configuracao extends AbstractEntity {
     tempoParaDesconto?: TimeRanges
     tempoDeDesconto?: TimeRanges
     gerarDesconto?: boolean
-    vagasCarro?: Int16Array
-    vagasMoto?: Int16Array
-    vagasVan?: Int16Array
+    vagasCarro?: number
+    vagasMoto?: number
+    vagasVan?: number
     constructor(
         valorHora: BigInt,
         valorMinutoMulta: BigInt,
@@ -18,10 +18,11 @@ export class Configuracao extends AbstractEntity {
         tempoParaDesconto: TimeRanges,
         tempoDeDesconto: TimeRanges,
         gerarDesconto: boolean,
-        vagasCarro: Int16Array,
-        vagasMoto: Int16Array,
-        vagasVan: Int16Array
+        vagasCarro: number,
+        vagasMoto: number,
+        vagasVan: number
     ) {
+        super();
         this.valorHora = valorHora
         this.valorMinutoMulta = valorMinutoMulta
         this.inicioExpediente = inicioExpediente
